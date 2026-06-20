@@ -1,0 +1,107 @@
+// Central content for the portfolio. Edit here to update the site.
+
+export const profile = {
+  name: "Arockiya Ossia Arputharaj",
+  short: "Arockiya Ossia",
+  role: "AI/ML Engineer",
+  tagline: "I turn research into shipped products.",
+  blurb:
+    "AI/ML Engineer building real-time voice agents, grounded RAG systems, and production LLM pipelines. Currently at F22 Labs, where I've authored 70+ technical POCs across speech, vision, and language.",
+  location: "Chennai, India",
+  email: "joilossia@gmail.com",
+  phone: "+91 88381 30136",
+  linkedin: "https://www.linkedin.com/in/arockiyaossia",
+  github: "https://github.com/ArockiyaOssia",
+  photo: "/ossia.png",
+  resume: "/Arockiya_Ossia_Resume_2026.pdf",
+};
+
+export const stats = [
+  { value: "70+", label: "Technical POCs" },
+  { value: "20+", label: "Models benchmarked" },
+  { value: "6", label: "Published blogs" },
+  { value: "4+", label: "Shipped projects" },
+];
+
+export const experience = [
+  {
+    company: "F22 Labs",
+    role: "AI/ML Intern",
+    period: "Dec 2025 — Present",
+    location: "Chennai, India",
+    points: [
+      "Authored 70+ POC research documents across STT/TTS fine-tuning, OCR, Vision AI, RAG, and multi-agent frameworks, spanning 15+ technology domains.",
+      "Benchmarked 20+ STT/TTS models (Whisper, Covo-Audio, Soprana, Kokoro) on WER, latency, and fine-tuning potential; published to an internal STT Leaderboard.",
+      "Built real-time voice AI pipelines (LiveKit + fine-tuned Whisper) with GraphRAG retrieval (FalkorDB, Neo4j); published 6 technical blogs.",
+    ],
+  },
+  {
+    company: "Shiash Info Solutions",
+    role: "Data Science Intern",
+    period: "Jul 2025 — Sep 2025",
+    location: "Chennai, India",
+    points: [
+      "Built end-to-end ML pipelines and PyTorch CNN models for CCTV crime classification and pet emotion recognition (84%+ and 90%+ accuracy).",
+      "Delivered a predictive analytics model with actionable insights to stakeholders.",
+    ],
+  },
+];
+
+export type Project = {
+  title: string;
+  tag: string;
+  desc: string;
+  stack: string[];
+  link?: string;
+  org?: string;
+};
+
+export const projects: Project[] = [
+  {
+    title: "Semester Buddy",
+    tag: "Voice-First AI Study Tutor",
+    desc: "Grounds answers in a student's own textbooks via hybrid RAG. OCR ingestion, multilingual LiveKit + Whisper voice, and CrewAI quiz generation with mastery tracking.",
+    stack: ["Python", "FastAPI", "LanceDB", "BGE-M3", "Next.js"],
+    link: "https://github.com/ArockiyaOssia/Semester-Buddy-voice-first-grounded-AI-tutor",
+  },
+  {
+    title: "AI Interview Evaluator",
+    tag: "LLM Transcript Scoring",
+    org: "F22 Labs",
+    desc: "Scores technical interview transcripts against job descriptions with timestamp-grounded evidence. Batch multi-candidate evaluation, streaming dashboard, dual OpenAI/Anthropic backends.",
+    stack: ["Python", "Anthropic", "OpenAI", "Gradio", "Docker"],
+    link: "https://github.com/ArockiyaOssia/AI_Interview_summary",
+  },
+  {
+    title: "Intelligent Backlinking System",
+    tag: "Hybrid Retrieval + LLM",
+    org: "F22 Labs",
+    desc: "Auto-suggests contextual internal links across 470+ blogs using hybrid dense + sparse vector search and LLM relevance scoring, with hallucination guardrails and cost tracking.",
+    stack: ["Python", "Qdrant", "OpenAI", "Claude", "LlamaIndex"],
+  },
+  {
+    title: "Dog Emotion Recognition",
+    tag: "Computer Vision",
+    desc: "Transfer-learning CNN (EfficientNetB0, ResNet50) classifying dog emotions from images; 90%+ accuracy via augmentation and fine-tuning.",
+    stack: ["PyTorch", "Scikit-learn", "OpenCV"],
+  },
+];
+
+export const skills: { group: string; items: string[] }[] = [
+  {
+    group: "LLMs & GenAI",
+    items: ["RAG & GraphRAG", "Fine-tuning (LoRA/PEFT)", "Quantization (AWQ/GPTQ)", "Prompt Engineering", "Multi-agent (CrewAI, MCP)", "Model Evaluation"],
+  },
+  {
+    group: "Speech & Vision",
+    items: ["STT / TTS", "Whisper", "Voice AI Agents", "OCR", "CNNs / OpenCV", "Vision-Language Models"],
+  },
+  {
+    group: "Retrieval & Data",
+    items: ["Hybrid Search", "Reranking", "Embeddings (BGE-M3)", "Qdrant / LanceDB", "FalkorDB / Neo4j", "PostgreSQL / pgvector"],
+  },
+  {
+    group: "Frameworks & MLOps",
+    items: ["PyTorch", "LangChain / LlamaIndex", "FastAPI", "Next.js / React", "Docker", "n8n / WebSockets"],
+  },
+];
