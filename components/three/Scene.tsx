@@ -65,6 +65,7 @@ function Rig() {
 
 export default function Scene() {
   const [mounted, setMounted] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setMounted(true);
@@ -73,7 +74,12 @@ export default function Scene() {
       scrollState.pointer.y = -((e.clientY / window.innerHeight) * 2 - 1);
     };
     window.addEventListener("pointermove", onMove);
-    return () => window.removeEventListener("pointermove", onMove);
+    // fade the loader once the canvas + point sampling have had time to settle
+    const t = setTimeout(() => setLoading(false), 1400);
+    return () => {
+      window.removeEventListener("pointermove", onMove);
+      clearTimeout(t);
+    };
   }, []);
 
   if (!mounted) return null;
@@ -111,6 +117,15 @@ export default function Scene() {
       {/* readability veils over the moving 3D */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(8,8,11,0.82)_100%)]" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[rgba(8,8,11,0.55)] via-transparent to-[rgba(8,8,11,0.7)]" />
+
+      {/* brief loader so the hero never flashes empty while points sample */}
+      <div
+        className={`pointer-events-none absolute inset-0 flex items-center justify-center bg-[#05070f] transition-opacity duration-700 ${
+          loading ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <div className="h-8 w-8 animate-spin rounded-full border-2 border-[rgba(120,160,255,0.2)] border-t-[#4cc9ff]" />
+      </div>
     </div>
   );
 }

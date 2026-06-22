@@ -7,7 +7,7 @@ import { MeshSurfaceSampler } from "three/examples/jsm/math/MeshSurfaceSampler.j
 import * as THREE from "three";
 import { scrollState } from "@/lib/scroll";
 
-const COUNT = 95000;
+const COUNT = 55000;
 const URL = "/models/brain.glb?v=2";
 const TARGET = 6; // normalized max dimension
 const FACE_Y = 0; // base yaw so the face points at the viewer (tuned)
