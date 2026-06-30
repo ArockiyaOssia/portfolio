@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="relative px-6 py-32">
       <div className="mx-auto max-w-6xl">
         <p className="label mb-5" data-reveal>
-          05 / Contact
+          06 / Contact
         </p>
         <h2
           className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl"

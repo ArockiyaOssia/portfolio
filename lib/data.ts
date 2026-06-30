@@ -94,6 +94,15 @@ export const projects: Project[] = [
   },
 ];
 
+export const blogs: { title: string; topic: string }[] = [
+  { title: "What Is Prompt Chaining? How To Use It Effectively", topic: "LLMs" },
+  { title: "How AI Agents Chat: Function Calls, MCP, ACP, and More", topic: "Agents" },
+  { title: "Map Reduce for Large Document Summarization with LLMs", topic: "Summarization" },
+  { title: "How to Fine-Tune Whisper Small for Better Speech Recognition", topic: "Speech" },
+  { title: "How to Build a Real-Time Voice AI Agent with Whisper and LiveKit", topic: "Voice AI" },
+  { title: "How To Access Free LLM Models Using FreeLLMAPI", topic: "Tooling" },
+];
+
 export const skills: { group: string; items: string[] }[] = [
   {
     group: "LLMs & GenAI",
