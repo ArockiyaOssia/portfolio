@@ -18,11 +18,11 @@ export default function Writing() {
           shipping POCs at F22 Labs.
         </p>
 
-        <div className="grid gap-px overflow-hidden rounded-xl border border-[var(--line)] sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2">
           {blogs.map((b, i) => (
             <article
               key={b.title}
-              className="flex items-start gap-4 bg-[var(--bg-soft)] p-6"
+              className="glass flex items-start gap-4 p-6 transition-transform hover:-translate-y-1"
               data-reveal
             >
               <span className="font-mono text-xs text-cyan">
