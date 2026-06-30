@@ -14,11 +14,11 @@ export default function Experience() {
           Where I&apos;ve worked
         </h2>
 
-        <div className="space-y-px">
+        <div className="space-y-6">
           {experience.map((job) => (
             <div
               key={job.company}
-              className="group grid gap-6 border-t border-[var(--line)] py-10 md:grid-cols-[0.4fr_1fr]"
+              className="glass group grid gap-6 p-8 md:grid-cols-[0.4fr_1fr]"
               data-reveal
             >
               <div>

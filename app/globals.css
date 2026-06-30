@@ -65,12 +65,12 @@ p {
   background:
     linear-gradient(
       135deg,
-      rgba(120, 160, 255, 0.10) 0%,
-      rgba(11, 16, 32, 0.35) 45%,
-      rgba(11, 16, 32, 0.45) 100%
+      rgba(90, 130, 230, 0.14) 0%,
+      rgba(9, 13, 26, 0.74) 45%,
+      rgba(9, 13, 26, 0.82) 100%
     );
-  backdrop-filter: blur(22px) saturate(1.6);
-  -webkit-backdrop-filter: blur(22px) saturate(1.6);
+  backdrop-filter: blur(26px) saturate(1.5);
+  -webkit-backdrop-filter: blur(26px) saturate(1.5);
   border: 1px solid rgba(150, 185, 255, 0.18);
   border-radius: 1rem;
   box-shadow:
