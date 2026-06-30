@@ -30,9 +30,12 @@ export const experience = [
     period: "Dec 2025 — Present",
     location: "Chennai, India",
     points: [
-      "Authored 70+ POC research documents across STT/TTS fine-tuning, OCR, Vision AI, RAG, and multi-agent frameworks, spanning 15+ technology domains.",
-      "Benchmarked 20+ STT/TTS models (Whisper, Covo-Audio, Soprana, Kokoro) on WER, latency, and fine-tuning potential; published to an internal STT Leaderboard.",
-      "Built real-time voice AI pipelines (LiveKit + fine-tuned Whisper) with GraphRAG retrieval (FalkorDB, Neo4j); published 6 technical blogs.",
+      "Authored 70+ POC research documents across 15+ technology domains — STT/TTS fine-tuning, OCR, Vision-Language models, RAG, voice AI, and multi-agent frameworks — turning bleeding-edge research into working, reproducible demos for engineering teams.",
+      "Benchmarked 20+ STT/TTS models (Whisper, Parakeet, Deepgram, Kokoro, Kani-TTS, Rime) on WER, latency, and fine-tuning potential, and fine-tuned Whisper-Small for domain speech; published results to an internal STT Leaderboard adopted by engineering teams.",
+      "Built real-time voice AI agents with streaming STT — LiveKit + Whisper for live transcription, with telephony (Plivo) for inbound/outbound phone calls and sub-2s turn-taking.",
+      "Engineered RAG systems with hybrid dense + sparse search, reranking, and chunking strategies over multiple vector stores (Qdrant, LanceDB, pgvector), plus GraphRAG retrieval on FalkorDB and Neo4j.",
+      "Prototyped multi-agent systems (CrewAI, AutoGen, A2A, ACP, MCP) and Map-Reduce / Refine summarization pipelines for large documents; explored model quantization (AWQ/GPTQ) and fully-local inference via Ollama.",
+      "Built OCR and document-parsing pipelines (Surya/datalab) and evaluated Vision-Language embedding models; published 6 technical blogs (640–1,072 impressions each) on prompt chaining, agent protocols, Map-Reduce summarization, Whisper fine-tuning, and real-time voice agents.",
     ],
   },
   {

@@ -37,11 +37,11 @@ export default function About() {
             abstractions.
           </p>
 
-          <div className="mt-10 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-[var(--line)] sm:grid-cols-4">
+          <div className="glass mt-10 grid grid-cols-2 divide-x divide-y divide-[var(--line)] sm:grid-cols-4 sm:divide-y-0">
             {stats.map((s) => (
               <div
                 key={s.label}
-                className="bg-[var(--bg-soft)] p-5 text-center"
+                className="p-5 text-center"
                 data-reveal
               >
                 <div className="text-2xl font-semibold text-gradient">
